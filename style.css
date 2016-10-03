@@ -297,6 +297,10 @@ video {
 	margin-top: 4rem;
 }
 
+.container {
+	width: 1200px;
+}
+
 .job-container {
 	text-align: left;
 	width: 700px;
@@ -334,4 +338,11 @@ video {
 		text-align: center;
 	}
 
+}
+
+
+@media (max-width: 1200px) {
+	.container {
+		width: 100%;
+	}
 }
