@@ -2,7 +2,6 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<title>Pup Up - Puppies straight to your phone</title>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -106,11 +105,9 @@
 				<div class="hero-text animated fadeIn">
 					Puppies straight to your phone.
 				</div>
-				<a class="spacing animated bounceIn" href="http://beta.getpupup.com">
-					<button>
-						PUP UP
-					</button>
-				</a>
+				<button class="spacing animated bounceIn" onClick="showMailingPopUp()">
+					PUP UP
+				</button>
 				<div class="hero-pics animated fadeIn">
 					<div class="safari-sucks">
 						<video loop poster="img/loading.png" preload="auto" autoplay width="253" height="450" src="video/video-final-small.mov"></video>
@@ -122,4 +119,10 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+	<script type="text/javascript">
+	function showMailingPopUp() {
+		require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us9.list-manage.com","uuid":"97fd1331c8ddd99bdaebe7065","lid":"905b412719"}) })
+	}
+	</script>
 </html>
