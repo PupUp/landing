@@ -33,6 +33,8 @@
 
 body {
 	display: flex;
+	margin: 0;
+	overflow-x:hidden;
 	justify-content: center;
 }
 
@@ -141,7 +143,7 @@ button:active {
 	font-size: 40px;
 	font-family: Neue Frutiger;
 	font-weight: 200;
-	padding: 3rem 2rem;
+	margin: 3rem 2rem;
 	text-align: center;
   line-height: 50px;
 }
@@ -165,4 +167,14 @@ video {
 	margin-top: 70px;
 	border: 1px solid #2d2d2d;
 	border-radius: 2.5px;
+}
+
+
+@media (max-width: 450px) {
+	.hero-right, .hero-left {
+		display: none;
+	}
+	.hero {
+		height: 1150px;
+	}
 }
