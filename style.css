@@ -71,11 +71,12 @@ body {
 }
 
 a {
-
+	display: inline-block;
+	align-self: center;
 }
 
 .spacing {
-	margin-bottom: 4rem;
+	padding-bottom: 4rem;
 }
 
 .safari-sucks {
@@ -101,8 +102,6 @@ button {
 	top: 0;
 	padding-bottom: calc(0.5rem - 4px);
 	align-self: center;
-	display: inline-block;
-	align-self: center;
 	background: #f67621; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #f67621 0%, #ec5e00 100%); /* FF3.6-15 */
 	background: -webkit-radial-gradient(center, ellipse cover,  #f67621 0%,#ec5e00 100%); /* Chrome10-25,Safari5.1-6 */
@@ -113,7 +112,7 @@ button {
 button:active {
 	border-bottom: 0px;
 	top: 4px;
-	margin-bottom: calc(4rem + 4px);
+	margin-bottom: 4px;
 }
 
 .hero {
